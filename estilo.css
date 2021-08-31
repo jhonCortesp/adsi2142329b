@@ -1,0 +1,19 @@
+
+
+  body{
+      width: 1280px;
+      height: 1200px;
+      background: -webkit-radial-gradient(rgb(235, 240, 235), rgb(17, 18, 19));
+  }
+  form{
+      text-align: center;
+      border-radius: 20px;
+      padding: 20px 0px 30px 30px;
+      background: rgb(255, 255, 255);
+      height: 550px;
+      width: 500px;
+      margin-left: 385px;
+  }
+  #m{
+      margin-bottom: 100px;
+  }
