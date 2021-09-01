@@ -43,6 +43,7 @@ function NumeroMenor($nums1){
 }
 echo "El numero menor es".NumeroMenor($nums1).'<br>';
 
+
     function prom($numeros){
         $sum=0;
         for ($i=0; $i <count($numeros) ; $i++) { 
@@ -51,6 +52,22 @@ echo "El numero menor es".NumeroMenor($nums1).'<br>';
         return $sum;
     }
     echo "el promedio es ".prom($nums1)/$num."<br>";
+
+function calcular_mediana($nums1) {
+        sort($nums1);
+        $count = count($nums1);
+        $num = floor(($count-1)/2);
+        if($count % 2) {
+        $median = $nums1[$num];
+        } else {
+        $a = $nums1[$num];
+        $b = $nums1[$num+1];
+        $median = (($a+$b)/2);
+        }
+        return $median;
+        
+        }
+    echo 'la mediana es '.calcular_mediana($nums1);
     ?>
 </form>
 </body>
