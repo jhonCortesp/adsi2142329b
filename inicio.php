@@ -28,25 +28,21 @@
     }
 
 
-    num($nums1);
-    function num($nums1){
-        $mayor=0;
-        $menor=0;
+function NumeroMayor($nums1){
+    $mayor=0;
+  foreach ($nums1 as $valor) {
+    if ($valor>$mayor)
+     $mayor = $valor;
+  }
+  return $mayor;
+}
+echo "<br>"."El numero mayor es".NumeroMayor($nums1)."<br>";
+function NumeroMenor($nums1){
+    $menor=min($nums1);
+  return $menor;
+}
+echo "El numero menor es".NumeroMenor($nums1).'<br>';
 
-        foreach ($nums1 as $key){
-            if ($mayor < $key){
-                $mayor = $key;
-            }
-            if ($menor > $key){
-                $menor = $key; 
-    
-            }
-        }
-    echo "<br>"."el numero mayor es".$mayor."<br>";
-    echo "el numero menor es".$menor."<br>";
-    }
-    ?>
-    <?php 
     function prom($numeros){
         $sum=0;
         for ($i=0; $i <count($numeros) ; $i++) { 
@@ -54,7 +50,7 @@
         }
         return $sum;
     }
-    echo "el promedio es ".prom($nums1)/$num;
+    echo "el promedio es ".prom($nums1)/$num."<br>";
     ?>
 </form>
 </body>
