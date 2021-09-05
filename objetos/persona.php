@@ -9,7 +9,7 @@ class persona{
     }
 
     function datos(){
-        return 'vive en:' .$this$ciudad . 'y su numero es: '.$this->$telefono;
+        return 'vive en:'.$this->$ciudad.'y su numero es: '.$this->$telefono;
     }
 }
 ?>

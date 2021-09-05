@@ -1,6 +1,6 @@
 <?php
     //notacion camell case
-    include('persona.php')
+    include('persona.php');
     
     class aprendiz extends persona{
         private $nombre;
@@ -8,12 +8,12 @@
         private $ficha;
 
 
-        function __construct($nombre,$documento,$ficha){
+        function __construct($nombre,$documento,$ficha,$ciudad,$telefono){
             parent::__construct($ciudad,$telefono);
             $this->nombre=$nombre;
             $this->documento=$documento;
             $this->ficha=$ficha;
-            echo 'soy el constructor'.'<br>';
+           // echo 'soy el constructor'.'<br>';
         }
         function setter($atributo,$valor){
             $this->$atributo=$valor;
@@ -33,7 +33,7 @@
         function setFicha($ficha){
             $this->ficha=$ficha;
 
-        }
+        }*/
         function getDocumento(){
             return $this->documento;
         }
@@ -42,15 +42,15 @@
         }
         function getFicha(){
             return $this->ficha;
-        }*/
+        }
     }
     $ob=new aprendiz("jhon",1000125,2142329,'soacha',2563336665);
-    echo $ob-> datos();
+    
 
     $ob-> setter("nombre","jhon");
     $ob-> setter("documento",12358);
     $ob-> setter("ficha",52486);
-
+    echo $ob-> datos();
     echo $ob->getter("nombre");
     echo $ob->getter("documento");
     echo $ob->getter("ficha");
