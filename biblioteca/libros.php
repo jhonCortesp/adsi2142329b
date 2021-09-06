@@ -1,32 +1,49 @@
-<?php
-    class libro{
-        private $editoria='';
-        private $LibroAltaMaterial=0;
-        private $LibroBajaMaterial=0;
-        private $LibroCambioMaterial=0;
+<?php 
 
-        function __construct($editoria,$LibroAltaMaterial,$LibroBajaMaterial,$LibroCambioMaterial){
-            $this->editoria=$editoria;
-            $this->LibroAltaMaterial=$LibroAltaMaterial; 
-            $this->LibroBajaMaterial=$LibroBajaMaterial; 
-            $this->LibroCambioMaterial=$LibroCambioMaterial;     
-        }
-        function dato1(){
-            return '<br>'.'su editoria es:'.$this->editoria.'<br>'.'la alta material de su libro:'.$this->LibroAltaMaterial.'<br>'.'la baja material de su libro:'.$this->LibroBajaMaterial.'<br>'.'el cambio material de su libro:'.$this->LibroCambioMaterial.'<br>'.'<br>'.'<br>';
-        }
-    }
-    class revista{
-        private $RevistaAltaMaterial=0;
-        private $RevistaBajaMaterial=0;
-        private $RevistaCambioMaterial=0;
+include ('material.php');
 
-        function __construct($RevistaAltaMaterial,$RevistaBajaMaterial,$RevistaCambioMaterial){
-            $this->RevistaAltaMaterial=$RevistaAltaMaterial; 
-            $this->RevistaBajaMaterial=$RevistaBajaMaterial; 
-            $this->RevistaCambioMaterial=$RevistaCambioMaterial;     
-        }
-        function dato2(){
-            return '<br>'.'la alta material de su revista:'.$this->RevistaAltaMaterial.'<br>'.'la baja material de su revista:'.$this->RevistaBajaMaterial.'<br>'.'el cambio material de su revista:'.$this->RevistaCambioMaterial.'<br>';
-        }
+class Libro extends Material{
+    
+     private $editorial; 
+     private $numeroPaginas;
+     private $numeroCapitulos;
+        
+function __construct($tipoMaterial,$codigo,$autor,$titulo,$año,$status,$editorial,$numeroPaginas,$numeroCapitulos){
+    parent::__construct($tipoMaterial,$codigo,$autor,$titulo,$año,$status);
+    $this->editorial=$editorial;
+    $this->numeroPaginas=$numeroPaginas;
+    $this->numeroCapitulos=$numeroCapitulos;
+}
+    function setEditorial($editorial){        
+        $this->editorial=$editorial;
     }
+    function setnumeroPaginas($numeroPaginas){
+        $this->numeroPaginas=$numeroPaginas;
+    }
+    function setnumeroCapitulos($numeroCapitulos){
+        $this->numeroCapitulos=$numeroCapitulos;
+    }
+    function getEditorial(){
+        return $this->editorial;
+    }
+    function getnumeroPaginas(){
+        return $this->numeroPaginas;
+    }
+    function getnumeroCapitulos(){
+        return $this->numeroCapitulos;
+    }
+
+    function getAutor(){
+        return $this->autor;
+    }
+}
+$ob=new Libro('papel','ISBN 958-96700-0-8','Julio Verne','Viaje al centro de la tierra',1865,'Buen estado','EDITORIAL cupido','117','19');
+echo $ob->datos();
+echo '<br>';
+echo 'EDITORIAL: '.$ob->getEditorial();
+echo '<br>';
+echo 'NUMERO DE PAGINAS: '.$ob->getnumeroPaginas();
+echo '<br>';    
+echo 'NUMERO DE CAPITULOS: '.$ob->getnumeroCapitulos();
+echo '<br>';
 ?>

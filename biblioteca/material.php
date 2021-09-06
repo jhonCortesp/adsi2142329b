@@ -1,49 +1,23 @@
-<?php
-include 'libros.php';
-    class material extends libro {
-        private $tipoMaterial='';
-        private $codigo=0;
-        private $autor='';
-        private $titulo='';
-        private $anio='';
-        private $status=0;
+<?php 
+class Material{
+protected $tipoMaterial='';
+protected $codigo='';
+protected $autor='';
+protected $titulo='';
+protected $año=0;
+protected $status='';
 
-        function __construct($tipoMaterial,$codigo,$autor,$titulo,$anio,$status,$editoria,$LibroAltaMaterial,$LibroBajaMaterial,$LibroCambioMaterial){
-            parent::__construct($editoria,$LibroAltaMaterial,$LibroBajaMaterial,$LibroCambioMaterial);
-            $this->tipoMaterial=$tipoMaterial;
-            $this->codigo=$codigo;
-            $this->autor=$autor;
-            $this->titulo= $titulo;
-            $this->anio=$anio;
-            $this->status=$status;   
-        }
+function __construct($tipoMaterial,$codigo,$autor,$titulo,$año,$status){
+$this->tipoMaterial=$tipoMaterial;
+$this->codigo=$codigo;
+$this->autor=$autor;
+$this->titulo=$titulo;
+$this->año=$año;
+$this->status=$status;
+}
 
-        function dato(){
-            return 'su tipo de material es :'.$this->tipoMaterial.'<br>'.'codigo:'.$this->codigo.'<br>'.'autor:'.$this->autor.'<br>'.'titulo:'.$this->titulo.'<br>'.'anio:'.$this->anio.'<br>'.'status:'.$this->status;
-        }
-    }
-    class material1 extends revista {
-        private $tipoMaterial='';
-        private $codigo=0;
-        private $autor='';
-        private $titulo='';
-        private $anio='';
-        private $status=0;
-
-        function __construct($tipoMaterial,$codigo,$autor,$titulo,$anio,$status,$RevistaAltaMaterial,$RevistaBajaMaterial,$RevistaCambioMaterial){
-            parent::__construct($RevistaAltaMaterial,$RevistaBajaMaterial,$RevistaCambioMaterial);
-            $this->tipoMaterial=$tipoMaterial;
-            $this->codigo=$codigo;
-            $this->autor=$autor;
-            $this->titulo= $titulo;
-            $this->anio=$anio;
-            $this->status=$status;   
-        }
-
-        function dato(){
-            return 'su tipo de material es :'.$this->tipoMaterial.'<br>'.'codigo:'.$this->codigo.'<br>'.'autor:'.$this->autor.'<br>'.'titulo:'.$this->titulo.'<br>'.'anio:'.$this->anio.'<br>'.'status:'.$this->status;
-        }
-    }
-
-
+ function datos(){
+     return 'TIPO DE MATERIAL: '.$this->tipoMaterial.'<br>'. 'CODIGO: '.$this->codigo.'<br>'. 'AUTOR: '.$this->autor.'<br>'. 'TITULO: '.$this->titulo.'<br>'. 'AÑO: '.$this->año.'<br>'. 'STATUS: '.$this->status;
+ }
+}
 ?>
