@@ -1,5 +1,5 @@
 <?php 
-include ('material.php');
+include_once ('material.php');
 class Revista extends Material{
      private $tema; 
      private $fechaPublicacion;
@@ -38,15 +38,10 @@ function __construct($tipoMaterial,$codigo,$autor,$titulo,$año,$status,$tema,$f
         return $this->numeroEdicion;
     }
 }
-$ob=new Revista('papel estucado','ISSN 0028-0836','Pepe Perez','nature',2020,'Buen estado','Cientifico','03-09-2021','EEUU','19');
-echo $ob->datos();
-echo '<br>';
-echo 'Tema: '.$ob->getTema();
-echo '<br>';
-echo 'Fecha de publicación: '.$ob->getFechaPublicacion();
-echo '<br>';    
-echo 'Lugar de publicacion: '.$ob->getLugarPublicacion();
-echo '<br>';
-echo 'Numero de edición: '.$ob->getNumeroEdicion();
-echo '<br>';
+$ob=new Revista('papel estucado','0028-0836','cristian perez','nature',2000,'Buen estado','Cientifico','03-09-2021','EEUU','19');
+echo $ob->datos().'<br>';
+echo '<b>'.'Tema: '.'</b>'.$ob->getTema().'<br>';
+echo '<b>'.'Fecha de publicación: '.'</b>'.$ob->getFechaPublicacion().'<br>';  
+echo '<b>'.'Lugar de publicacion: '.'</b>'.$ob->getLugarPublicacion().'<br>';
+echo '<b>'.'Numero de edición: '.'</b>'.$ob->getNumeroEdicion().'<br>';
 ?>

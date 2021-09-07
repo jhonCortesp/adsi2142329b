@@ -17,7 +17,7 @@ $this->status=$status;
 }
 
  function datos(){
-     return 'TIPO DE MATERIAL: '.$this->tipoMaterial.'<br>'. 'CODIGO: '.$this->codigo.'<br>'. 'AUTOR: '.$this->autor.'<br>'. 'TITULO: '.$this->titulo.'<br>'. 'AÑO: '.$this->año.'<br>'. 'STATUS: '.$this->status;
+     return '<b>'.'TIPO DE MATERIAL: '.'</b>'.$this->tipoMaterial.'<br>'. '<b>'.'CODIGO: '.'</b>'.$this->codigo.'<br>'.'<b>'. 'AUTOR: '.'</b>'.$this->autor.'<br>'.'<b>'. 'TITULO: '.'</b>'.$this->titulo.'<br>'. '<b>'.'AÑO: '.'</b>'.$this->año.'<br>'. '<b>'.'STATUS: '.'</b>'.$this->status;
  }
 }
 ?>

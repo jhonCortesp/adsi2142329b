@@ -1,58 +1,54 @@
+<html>
+<center>
 <?php
 include ('revista.php');
 class Biblioteca{
-    private $coleccion;    
+    private $revista;    
 
     function __construct(){
-        $this->coleccion=array();
+        $this->revista=array();
     }
     
     function adicionar($material){
-        array_push($this->coleccion,$material);
+        array_push($this->revista,$material);
     }
 
     function verMateriales(){
-        for ($i=0; $i <count($this->coleccion) ; $i++) { 
-            echo $this->coleccion[$i]->gettema();
+        for ($i=0; $i <count($this->revista) ; $i++) { 
+            echo $this->revista[$i]->gettema();
         }
     }
     
 }
 
-$biblio=new Biblioteca();
-$ob1=new Revista('papel estucado','ISSN 0028-0836','Pepe Perez','nature',2020,'Buen estado','Cientifico','03-09-2021','EEUU','19');
-
-$biblio->adicionar($ob);
-$biblio->adicionar($ob1);
-
-$biblio->verMateriales();
+$dator=new Biblioteca();
+$dator->adicionar($ob);
+$dator->verMateriales();
 
 include ('libros.php');
 class Biblioteca1{
-    private $coleccion;    
+    private $libro;    
 
     function __construct(){
-        $this->coleccion=array();
+        $this->libro=array();
     }
     
-    function adicionar($material){
-        array_push($this->coleccion,$material);
+    function adicionar($material1){
+        array_push($this->libro,$material1);
     }
 
     function verMateriales(){
-        for ($i=0; $i <count($this->coleccion) ; $i++) { 
-            echo $this->coleccion[$i]->getAutor();
+        for ($i=0; $i <count($this->libro) ; $i++) { 
+            echo $this->libro[$i]->getAutor();
         }
     }
     
 }
 
-$biblio=new Biblioteca1();
-$ob2=new Libro('virtual','ISBN 856-96700-0-9','Gabo','100 años de soledad',1978,'Buen estado','EDITORIAL Planeta','200','20');
-
-$biblio->adicionar($ob);
-$biblio->adicionar($ob2);
-
-$biblio->verMateriales();
+$datol=new Biblioteca1();
+$datol->adicionar($ob2);
+$datol->verMateriales();
 
 ?>
+</center>
+</html>

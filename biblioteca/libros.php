@@ -1,7 +1,5 @@
 <?php 
-
-include ('material.php');
-
+include_once ('material.php');
 class Libro extends Material{
     
      private $editorial; 
@@ -37,13 +35,11 @@ function __construct($tipoMaterial,$codigo,$autor,$titulo,$año,$status,$editori
         return $this->autor;
     }
 }
-$ob=new Libro('papel','ISBN 958-96700-0-8','Julio Verne','Viaje al centro de la tierra',1865,'Buen estado','EDITORIAL cupido','117','19');
-echo $ob->datos();
+$ob2=new Libro('papel','Cod. 606094',' J. K. Rowling','HARRY POTTER Y LA ORDEN DEL FÉNIX',1865,'Buen estado',' salamandra','928','25');
 echo '<br>';
-echo 'EDITORIAL: '.$ob->getEditorial();
 echo '<br>';
-echo 'NUMERO DE PAGINAS: '.$ob->getnumeroPaginas();
-echo '<br>';    
-echo 'NUMERO DE CAPITULOS: '.$ob->getnumeroCapitulos();
-echo '<br>';
+echo $ob2->datos().'<br>';
+echo '<b>'.'EDITORIAL:'.'</b>'.$ob2->getEditorial().'<br>';
+echo '<b>'.'NUMERO DE PAGINAS:'.'</b>'.$ob2->getnumeroPaginas().'<br>';   
+echo '<b>'.'NUMERO DE CAPITULOS:'.'</b>'.$ob2->getnumeroCapitulos().'<br>';
 ?>
