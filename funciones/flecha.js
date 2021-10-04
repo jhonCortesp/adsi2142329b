@@ -77,15 +77,15 @@ var pro=v=>{
     for (let i = 0; i < v.length; i++) {       
             suma += v[i];
     }
-    return suma/4;
+    return suma/v.length;
 }
 console.log('promedio ='+pro(v)); 
 
 //mediana
 var med =v=>{
-    let lowMiddle = Math.floor((v.length - 1) / 2);
-    let highMiddle = Math.ceil((v.length - 1) / 2);
-    let median = (v[lowMiddle] + v[highMiddle]) / 2;
+    let a = Math.floor((v.length - 1) / 2);
+    let b = Math.ceil((v.length - 1) / 2);
+    let median = (v[a] + v[b]) / 2;
     return median;
 }
 console.log('mediana ='+med(v)); 
