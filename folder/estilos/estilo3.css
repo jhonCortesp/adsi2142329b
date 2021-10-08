@@ -1,0 +1,144 @@
+:root{
+    --colorTextos:#49454567;
+}
+*{
+    padding: 0;
+    margin: 0;    
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto';
+    background-image: url("../imagenes/fondo4.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+}
+body:before{
+    content: "";
+    width: 100%;
+    min-height: 130vh;
+    position:absolute;
+    top: 0;
+    left: 0;
+    background: #252E61;
+    opacity: 0.5;
+    
+
+}
+h1{
+    margin-right: 30px;
+    margin-left: 30px;
+    text-align: center;
+    font-weight: 700;
+}
+form{
+    background-color: #fff;
+    padding: 40px 0;
+    box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    position: relative;
+    width: 40%;
+    margin-left: 400px;
+    margin-top: 50px;
+    
+}
+.form{
+    width: 100%;
+    margin: auto;
+}
+form .grupo{
+    position: relative;
+    margin: 45px;
+}
+input{
+    background:none;
+    color: black;
+    font-size: 18px;
+    padding: 10px 10px 10px 5px ;
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid var(--coloTextos);
+}
+input:focus{
+    outline: none;
+    color: black;
+}
+label{
+    color:var(--colorTextos);
+    font-size: 16px;
+    position: absolute;
+    left: 5px;
+    top: 10px;
+    transition: 0.5 ease-in-out all;
+    pointer-events: none;
+}
+input:focus~label,
+input:valid~label{
+    top: -14px;
+    font-size: 12px;
+    color: #2196f3;
+}
+.barra{
+    position: relative;
+    display: block;
+    width: 100%;
+}
+.barra::before{
+    content:"";
+    height: 2px;
+    width: 0%;
+    bottom: 0;
+    position: absolute;
+    background: linear-gradient(to right, #56B4D3, #348F50);
+    transition: 0.3s ease width;
+    left: 0;
+
+}
+input:focus~.barra::before{
+    width: 100%;
+}
+button{
+    font-family: 'roboto';
+    background: linear-gradient(to right, #000000, #434343);
+    border: none;
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+    height: 40px;
+    font-size: 16px;
+    
+}
+#inpu{
+    color: #fff;
+}
+a{
+    color: #fff;
+    text-decoration: none;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: linear-gradient(to right, #000000, #434343);
+    position: relative;
+}
+
+li {
+    float: right;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}

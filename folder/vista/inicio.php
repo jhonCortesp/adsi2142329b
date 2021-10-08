@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
 	<title>folder</title>	
-	<link rel="stylesheet" type="text/css" href="../estilos/css.css">
+	<link rel="stylesheet" type="text/css" href="../estilos/estilo1.css">
 	<meta charset="utf-8">
 	<meta name="keywords" content="folder programador">
 	<meta name="description" content="Esta pagina trata de un portfolio freelance ">
@@ -15,8 +15,10 @@
 <header id='header'>
 	
 	<ul>
-		<li><a href="">inicio</a></li>
-		<li><a href="">informacion</a></li>
+  		<li id="inicio"><a href="">INICIO</a></li>
+		<li><a href="indexinsertar.php">CRUD</a></li>
+		<li><a href="manual.php">MANUAL </a></li>
+		<li><a href="java.php">JAVA </a></li>
 	</ul>
 	<img id="logo" src="../imagenes/logo.png">
 </header>
@@ -32,7 +34,7 @@
 </div>
 <div id="div2">
 	<img id="logo" src="../imagenes/logo.png">	<br><br><br>
-	<p id="p1">hola soy jhon cortes tengo 19años,<br> 
+	<p id="p1">hola soy jhon cortes tengo 18años,<br> 
 	vivo en la localidad de bosa la libertad, aprendiz del sena,<br>
 	soy un desarrollador front-end y Back end,<br> 
 	con un buen ojo para crear una interfaz  atractiva, dando vida a los productos.
@@ -62,15 +64,17 @@
 	<img src="../imagenes/pro2.png" id="imgdiv4" >
 
 </div>
+
 <div id="div5">
 	<h1 id="h1div5">EXPERIENCIA</h1>
 	<div id="div51">
-	<h3>relleno</h3>
-	<p >Lorem Ipsum es simplemente el <br>texto de relleno de las 
-		imprentas<br> y archivos de texto. Lorem Ipsum ha sido el<br> 
-		texto de relleno estándar de las <br>industrias desde el 
-		año 1500, cuando un <br>impresor (N. del T. persona que se 
-		dedica<br> a la imprenta)</p>
+	<h3>Aprendiz</h3>
+	<p >e programado en el proyecto <br>delicia express<br>
+		en el cual mi rol fue  
+		el de administrador,<br> este proyecto es una aplicacion<br> 
+		de comidas rapidas en el  <br>puedes crear tu propio plato. <br> 
+		<br>esta seria mi experiencia respecto a proyectos.
+		</p>
 	</div>
 	<div id="div52">
 	</div>

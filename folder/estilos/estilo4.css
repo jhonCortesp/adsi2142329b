@@ -1,0 +1,85 @@
+*{
+    padding: 0;
+    margin: 0;    
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto';
+    background-image: url("../imagenes/fondo4.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+}
+body:before{
+    content: "";
+    width: 100%;
+    min-height: 130vh;
+    position:absolute;
+    top: 0;
+    left: 0;
+    background: #252E61;
+    opacity: 0.5;
+    
+
+}
+table {
+    margin-left: 120px;
+    margin-top: 80px;
+    width: 80%;
+    border: 5px solid #000;
+    position: relative;
+   
+ }
+#th{
+    color: #ffffff;
+}
+ th, td {
+    width: 25%;
+    text-align: center;
+    padding: 0.3em;
+    color: black;
+ }
+ tbody tr:nth-child(odd) {
+    background-color: #7c767a;
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: #ffffff;
+  }
+  table {
+    background: linear-gradient(to right, #000000, #434343);
+  }
+ caption {
+    margin-bottom: 50px;
+    font-size: 40px;
+    color: #fff;
+ }
+ ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: linear-gradient(to right, #000000, #434343);
+    position: relative;
+}
+
+li {
+    float: right;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+input{
+    background:none;
+}

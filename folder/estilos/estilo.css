@@ -1,0 +1,160 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body{
+	background-image: url("../imagenes/fondo4.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 1000px;
+}
+
+img{
+	width: 280px;
+	height: 140px;
+}
+#div1{
+	margin-top: 100px;
+	margin-left: 150px;
+	opacity: .8;
+	background-color: rgb(0, 0, 0);
+	height: 300px;
+	width: 850px;
+	color: #fff;
+	text-align: center;
+	padding-top: 3em;	
+}
+#h1div1{
+	margin-bottom: 30px;
+}
+#p1div1{
+	text-align: left;
+	margin-left: 80px;
+	margin-right: 80px;
+	margin-top: 30px;
+	font-size: 18px;
+}
+#hr1{
+	margin-left: 70px;
+	width: 83%;
+	height: 4px;
+	background-color:  azure;
+}
+#div2{
+	margin-top: 100px;
+	margin-left: 150px;
+	opacity: .8;
+	background-color: rgb(0, 0, 0);
+	height: 340px;
+	width: 850px;
+	color: #fff;
+	text-align: center;
+	padding-top: 3em;	
+}
+#h1div2{
+	margin-bottom: 30px;
+}
+#p1div2{
+	text-align: left;
+	margin-left: 80px;
+	margin-right: 80px;
+	margin-top: 30px;
+	font-size: 18px;
+}
+#oldiv2{
+	margin-left: 150px;
+	text-align: left;
+	font-size: 18px;
+}
+#div3{
+	margin-top: 100px;
+	margin-left: 150px;
+	opacity: .8;
+	background-color: rgb(0, 0, 0);
+	height: 430px;
+	width: 850px;
+	color: #fff;
+	text-align: center;
+	padding-top: 3em;	
+}
+#div31{
+
+	float: left;
+	width: 50%;
+}
+#div32{
+
+	float: right;
+	width: 50%;
+}
+#h1div3{
+	margin-bottom: 30px;
+}
+#h2div3{
+	text-align: left;
+	margin-left: 80px;
+	margin-right: 80px;
+	margin-top: 30px;
+}
+#p2div3{
+	text-align: left;
+	margin-left: 80px;
+	margin-right: 80px;
+	margin-top: 30px;
+	font-size: 18px;
+}
+#div4{
+	margin-top: 100px;
+	margin-left: 150px;
+	opacity: .8;
+	background-color: rgb(0, 0, 0);
+	height: 940px;
+	width: 850px;
+	color: #fff;
+	text-align: center;
+	padding-top: 3em;	
+}
+#h1div4{
+	margin-bottom: 30px;
+}
+#h2div4{
+	text-align: left;
+	margin-left: 80px;
+	margin-right: 80px;
+	margin-top: 30px;
+}
+#p1div4{
+	text-align: left;
+	margin-left: 80px;
+	margin-right: 80px;
+	margin-top: 30px;
+	font-size: 18px;
+}
+#div41{
+	margin-top: 50px;
+	float: left;
+	width: 50%;
+}
+#div42{
+	margin-top: 50px;
+	height: 330px;
+	border-left: thick solid #fffcfc;
+	float: left;
+	width: 50%;
+}
+#zoom {
+    transition: transform .2s; 
+}
+#zoom:hover {
+	margin-right: 100px;
+    transform: scale(2); 
+}
+#regresar{
+	font-size: 30px;
+	color: #fff;
+	text-decoration: none;
+}
+#regresar:hover{
+	color: aquamarine;
+}
