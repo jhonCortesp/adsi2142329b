@@ -12,13 +12,13 @@
     <h1 id="h1">ENLACES DE JAVASCRIPT</h1>
     
         <div id="div1">
-        <h2 id="h2"><a id="a"  href="../../funciones/index.html">Funciones flecha </a> </h2>
+        <h2 id="h2"><a id="a"  href="../funciones/index.html">Funciones flecha </a> </h2>
         </div>
         <div id="div2">
-        <h2  id="h2"><a id="a" href="../../POO/poo.html">Fracciones</a> </h2>
+        <h2  id="h2"><a id="a" href="../POO/poo.html">Fracciones</a> </h2>
         </div>
         <div id="div3">
-        <h2  id="h2"><a id="a" href="../../POO/herencia.html">Relacion de herencia y composicion</a> </h2>
+        <h2  id="h2"><a id="a" href="../POO/herencia.html">Relacion de herencia y composicion</a> </h2>
         </div>
 
         <button id="but"><a id="b" href="inicio.php">REGRESAR</a></button>

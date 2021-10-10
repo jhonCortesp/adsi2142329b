@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilos/estilo5.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="div">
+
+   <div id="div1">
+    <script src="flecha.js"></script>
+</div>
+<div id="div2">
+    <pre id="pre">
+        var vec=(array,tam)=>{
+            for (let i = 0; i < tam; i++) {
+                array.push(Math.round(Math.random()*100));
+                
+            }
+            return array;
+        }
+        v=[];
+        x=2;
+        console.log('flecha='+vec(v,x));
+        console.log('flecha='+vec(v,x)[0]);
+        console.log(v);
+        
+        
+        //suma par
+        var sumPar=vecto=>{
+            let suma=0;
+            for (let i = 0; i < vecto.length; i++) {
+                if (vecto [i]%2 == 0) {
+                    suma += v[i];
+                }
+            }
+            return suma;
+        }
+        document.write('suma par ='+sumPar(v)); 
+        
+        
+        //suma
+        var sum=v=>{
+            let sumar=0;
+            for (let i = 0; i < v.length; i++) {       
+                    sumar += v[i];
+            }
+            return sumar;
+        }
+        document.write('la suma es='+sum(v)); 
+        
+        //numero mayor
+        var may =v=> Math.max(...v);
+        document.write('El numero mayor  es: '+ may(v));
+        
+        //numero menor
+        var min =v=> Math.min(...v);
+        document.write('el numero menor es:'+min(v));
+        
+        //promedio
+        var pro=v=>{
+            let suma=0;
+            for (let i = 0; i < v.length; i++) {       
+                    suma += v[i];
+            }
+            return suma/v.length;
+        }
+        document.write('promedio ='+pro(v)); 
+        
+        //mediana
+        var med =v=>{
+            let a = Math.floor((v.length - 1) / 2);
+            let b = Math.ceil((v.length - 1) / 2);
+            let median = (v[a] + v[b]) / 2;
+            return median;
+        }
+        document.write('mediana ='+med(v)); 
+        
+        
+    </pre>
+</div>
+<button id="but1"><a id="b" href="../vista/java.php">REGRESAR</a></button>
+<button id="but"><a id="b" href="../vista/inicio.php">INICIO</a></button>
+</div>
+    
+</body>
+</html>

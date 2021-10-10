@@ -1,0 +1,8 @@
+para ingresar al portafolio busque la carpeta folder
+
+para ver el inicio del portafolio busque la pagina llamada inicio.php que se encuentra en la carpeta vista, esta es la pagina inicial en ella podra ver una barra 
+de navegacion para explorar a las otras paginas 
+
+la base de datos se encuentra en la carpeta vista y su nombre es delicia_express
+
+para ver las conexiones lo puede ver en la carpeta de conexión y en esta encontrara los dos tipos de conexiones utilizadas 

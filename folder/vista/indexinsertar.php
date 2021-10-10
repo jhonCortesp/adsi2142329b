@@ -9,7 +9,7 @@
 </head>
 <ul>
         <li id=""><a href="">REGISTRAR PRODUCTO</a></li>
-		<li><a href="indexlistar.php">MOSTRAR PRODUCTOS</a></li>
+		<li><a href="../vista/indexlistar.php">MOSTRAR PRODUCTOS</a></li>
 
 </ul>
 </head>

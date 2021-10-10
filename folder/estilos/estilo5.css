@@ -1,0 +1,58 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	
+}
+
+body{
+    background-image: url("../imagenes/fondo4.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+body:before{
+    content: "";
+    width: 100%;
+    min-height: 170vh;
+    position:absolute;
+    top: 0;
+    left: 0;
+    background: #252E61;
+    opacity: 0.5;
+    
+
+}
+#b{
+    text-decoration: none;
+    font-size: 30px;
+    color: black;
+}
+#b:hover{
+    background-color: black;
+    color: #fff;
+    
+}
+#but{
+    margin-top: 30px;  
+    position: relative;
+}
+#but1{
+    margin-left: 190px;
+    position: relative;
+}
+#div1{
+    width: 40%;
+    height: 80%;
+    float: left;
+    color: #fff;
+    position: relative;
+    padding:250px 0 20px 150px ;
+}
+#div2{
+    width: 60%;
+    height: 80%;
+    float: right;
+    color: #fff;
+    position: relative;
+}
